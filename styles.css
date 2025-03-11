@@ -1,0 +1,48 @@
+body {
+    /* background-color: #191919; */
+    margin: 0;
+    background-color: #2C2C2C;
+}
+
+.centerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexWrapper {
+    display: flex;
+}
+
+.mainWrapper {
+    background-color: #191919;
+    min-height: 100vh;
+    /* width: clamp(400px, 60vw, 600px); */
+    width: 400px;
+    overflow: visible;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contentWrapper {
+    width: auto;
+    height: auto;
+    background-color: #2C2C2C;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+p, h1, h2, h3{
+    color: white;
+    font-family: monospace;
+}
+
+p {
+    font-size: larger;
+}
+
+.profilePicture {
+    border-radius: 25%;
+    width: 100px;
+    height: 100px;
+}
