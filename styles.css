@@ -25,7 +25,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1r;
     grid-auto-flow: column;
-    border: red solid;
 }
 
 .mainWrapper {
@@ -35,7 +34,6 @@ body {
     overflow: visible;
     padding-left: 25px;
     padding-right: 25px;
-    border: red solid;
 }
 
 .contentWrapper {
@@ -44,6 +42,7 @@ body {
     background-color: #2C2C2C;
     padding-top: 15px;
     padding-left: 15px;
+    padding-bottom: 15px;
     border-radius: 25px;
 }
 
@@ -56,6 +55,26 @@ body {
     border-radius: 10px;
 }
 
+.technologiesWrapper {
+    display: flex;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.technologiesWrapper li {
+    position: relative;
+    bottom: -15px;
+}
+
+.technologiesWrapper svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
 .socialWrapper svg {
     transition: .5s;
 }
@@ -64,12 +83,12 @@ body {
     transform: translate(0, -3px);
 }
 
-p, h1, h2, h3{
+p, h1, h2, h3, li{
     color: white;
     font-family: monospace;
 }
 
-p {
+p , li{
     font-size: larger;
 }
 
@@ -77,4 +96,11 @@ p {
     border-radius: 25%;
     width: 100px;
     height: 100px;
+}
+
+
+@media (max-width: 864px)  {
+    .profilePicture {
+        transform: translate(0, 20px);
+    }
 }
