@@ -21,6 +21,15 @@ body {
     display: flex;
 }
 
+.projectFlexWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    overflow-x: hidden; 
+    flex-direction: row; 
+    align-items: center;
+}
+
 .gridWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1r;
@@ -43,7 +52,7 @@ body {
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .socialWrapper {
@@ -98,9 +107,85 @@ p , li{
     height: 100px;
 }
 
+.projectElement {
+    transition: .2s ease-in-out;
+    width: 45%;
+    height: auto;
+}
+
+.projectElement:hover .projectName {
+    display: none;
+}
+
+.projectElement:hover .projectDescriptionElement {
+    display: inline;
+}
+
+.projectDescriptionElement{
+    display: none;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 4px;
+    margin-right: 10px;
+    right: 0;
+    height: auto;
+    width: fit-content;
+}
+
+.projectDescription p {
+    position: relative;
+    transform: translate(0, -30%);
+    margin-left: 10px;
+    white-space: nowrap;
+
+}
+
+.projectElement img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: white solid;
+    border-right: white solid;
+    border-top: white solid;
+}
+
+.projectDescription {
+    position: relative;
+    transform: translate(0, -4px);
+    background-color: #2C2C2C;
+    width: 100%;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: white solid;
+    border-right: white solid;
+    border-bottom: white solid;
+}
+
+.rightBorderParagraph {
+    border-left: solid white;
+    padding-left: 25px;
+}
 
 @media (max-width: 948px)  {
     .profilePicture {
         transform: translate(0, 20px);
+    }
+
+    .projectElement {
+        width: 100%;
+    }
+
+    .projectName {
+        position: relative;
+        top: -2px;
+    }
+
+    .projectDescriptionElement {
+        display: block;
+    }
+
+    .projectElement:hover .projectName{
+        display: inline;
     }
 }
