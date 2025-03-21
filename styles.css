@@ -30,6 +30,19 @@ body {
     align-items: center;
 }
 
+.contactWrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    border: white solid; 
+    border-radius: 10px;
+    width: 90%;
+    max-width: 375px;
+}
+
+
+
 .gridWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1r;
@@ -39,7 +52,7 @@ body {
 .mainWrapper {
     background-color: #191919;
     min-height: 100vh;
-    width: clamp(400px, 50vw, 600px);
+    width: clamp(350px, 50vw, 600px);
     overflow: visible;
     padding-left: 25px;
     padding-right: 25px;
@@ -102,9 +115,21 @@ p , li{
 
 .profilePicture {
     border-radius: 25%;
+    transition: .2s ease-in-out;
     width: 110px;
     height: 110px;
     margin-top: 20px;
+}
+
+#profileText {
+    width: fit-content;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    
+    margin-top: -32px; 
+    margin-left: 20px;
 }
 
 .projectElement {
@@ -141,7 +166,7 @@ p , li{
 }
 
 .projectElement img {
-    width: 100%;
+    width: 90%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-left: white solid;
@@ -153,7 +178,7 @@ p , li{
     position: relative;
     transform: translate(0, -4px);
     background-color: #2C2C2C;
-    width: 100%;
+    width: 90%;
     height: 40px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -165,11 +190,21 @@ p , li{
 .rightBorderParagraph {
     border-left: solid white;
     padding-left: 25px;
+    width: 90%;
 }
 
 @media (max-width: 955px)  {
     .projectElement {
         width: 100%;
+    }
+
+    .profilePicture {
+        width: 100px;
+        height: 100px;
+    }
+
+    #profileText {
+        font-size: smaller;
     }
 
     .projectName {
