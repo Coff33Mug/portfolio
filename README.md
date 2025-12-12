@@ -5,7 +5,7 @@
 
 - 👨‍💻 All of my projects are available at [https://coff33mug.github.io/portfolio/](https://coff33mug.github.io/portfolio/)
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: HuynhD2005@gmail.com </h3>
 <p align="left">
 </p>
 
