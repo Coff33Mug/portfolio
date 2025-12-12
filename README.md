@@ -1,4 +1,4 @@
-<h1 align="center">This is my portfolio website! Daniel Huynh</h1>
+<h1 align="center">This is my portfolio website!</h1>
 <h3 align="center">A Full Stack Web Developer from Arizona!</h3>
 
 - 🔭 I’m currently working on **finishing my bachelors.**
