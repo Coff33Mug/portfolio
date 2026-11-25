@@ -114,9 +114,9 @@ p , li{
 }
 
 .profilePicture {
-    border-radius: 25%;
+    border-radius: 10%;
+    border: #262626 solid;
     transition: .2s ease-in-out;
-    width: 110px;
     height: 110px;
     margin-top: 20px;
 }
@@ -199,8 +199,7 @@ p , li{
     }
 
     .profilePicture {
-        width: 100px;
-        height: 100px;
+        height: 110px;
     }
 
     #profileText {
